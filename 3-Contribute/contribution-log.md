@@ -6,9 +6,11 @@ This document tracks my journey contributing to the open-source ecosystem.
 
 | Repository | Issue | Status | Notes |
 | :--- | :--- | :--- | :--- |
-| `[Owner]/[Repo]` | [#IssueNumber - Issue Title](link-to-issue) | 🔍 Investigating | *Example: Looks like a simple documentation fix in the README.* |
+| `python/cpython` | [Internal Asyncio Optimization] | 🔍 Scouting | *Analyzing internal event loop handling or socket performance wrappers.* |
+| `encode/httpx` | [Network Transport Layer Triage] | 🔍 Scouting | *Investigating connection pooling or asynchronous HTTP network client layers.* |
 
 ---
+
 ## 🏆 Merged Pull Requests
 
 | Repository | Pull Request | Date Merged | Impact |
