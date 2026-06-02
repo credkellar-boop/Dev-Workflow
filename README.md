@@ -16,11 +16,12 @@ Welcome to my central engineering hub. This repository tracks my continuous cycl
 
 ## 🧠 1. Learn (Knowledge Base)
 Documenting deep-dives into core computer science concepts. 
+* [Concurrency: Async Event Loops](./1-Learn/languages/async-event-loop.md) — Non-blocking I/O Mechanics.
 * [Data Structures: Hash Tables](./1-Learn/languages/hash-tables.md) — Hashing & Collision Mechanics.
 * [System Design: Rate Limiting](./1-Learn/system-design/rate-limiting.md) — Token Buckets & Traffic Control.
 * [System Design: Caching Strategies](./1-Learn/system-design/caching-strategies.md) — In-Memory Speed & Eviction.
 * [System Design: Load Balancers](./1-Learn/system-design/load-balancers.md) — Horizontal Scaling & Routing.
-* [Network Protocol Basics](./1-Learn/languages/networking-basics.md) — OSI Model & Socket Theory.
+
 
 
 ## 🛠️ 2. Build (From Scratch)
