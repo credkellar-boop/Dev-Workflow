@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  gateway:
+    build: ../mini-api-gateway
+    ports:
+      - "8000:8000"
+  db:
+    build: ../mini-db-engine
+    volumes:
+      - ./data:/app/data
