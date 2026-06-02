@@ -1,0 +1,15 @@
+# 🗄️ Data Structures: Hash Tables & Hashing
+
+Notes on the computer science primitives powering modern high-speed databases, caches, and key-value stores.
+
+## Core Mechanics
+* **Time Complexity:** Average-case lookup, insertion, and deletion run in $O(1)$ constant time. Worst-case runs in $O(n)$ if the hash function is poor and causes massive collisions.
+* **Hash Function:** A deterministic algorithm that maps input data of any size to a fixed-size integer value.
+
+## Handling Hash Collisions
+When two distinct keys compute to the exact same array index, the system must resolve the conflict:
+1. **Separate Chaining:** Buckets contain pointers to linked lists. Colliding items are simply appended to the list at that index.
+2. **Linear Probing:** The system sequentially scans the array forward from the collision point until it encounters an open memory slot.
+
+## Connection to My Builds
+* My `mini-redis` cache utilizes Python's native dictionary, which is an advanced hash table implementation using open addressing and pseudo-random probing to maintain ultra-low latency.
