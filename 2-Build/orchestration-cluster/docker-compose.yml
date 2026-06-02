@@ -1,28 +1,17 @@
 version: '3.8'
-
 services:
-  # Service A: The Asynchronous Web App Server Core
-  web-server:
-    build:
-      context: ../async-http-server
-      dockerfile: Dockerfile
-    ports:
-      - "8085:8085"
-    networks:
-      - backend-mesh
+  db:
+    build: ../mini-db-engine
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os; print(os.path.exists('data.db'))"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+
+  gateway:
+    build: ../mini-api-gateway
     depends_on:
-      - cache-engine
-
-  # Service B: The High-Speed Key-Value Data Store
-  cache-engine:
-    image: python:3.11-slim
-    volumes:
-      - ../mini-redis:/app
-    working_dir: /app
-    command: python kv_store.py
-    networks:
-      - backend-mesh
-
-networks:
-  backend-mesh:
-    driver: bridge
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
