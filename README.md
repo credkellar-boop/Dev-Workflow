@@ -2,11 +2,15 @@
 
 An elite, bare-metal infrastructure laboratory demonstrating deep-level mastery of distributed systems, concurrency, persistence, and container orchestration.
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Build: Passing](https://img.shields.io/badge/Build-Passing-brightgreen)
-![Architecture: Distributed](https://img.shields.io/badge/Architecture-Distributed-blue)
-![Language: Python](https://img.shields.io/badge/Language-Python-informational)
-![Status: Production-Ready](https://img.shields.io/badge/Status-Stable-success)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/credkellar-boop/Dev-Workflow/ci.yml?branch=main&label=Build)](https://github.com/credkellar-boop/Dev-Workflow/actions)
+[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+![Architecture: Microservices](https://img.shields.io/badge/Architecture-Microservices-red)
+![Containerization: Docker](https://img.shields.io/badge/Containerization-Docker-blue)
+![Development: Active](https://img.shields.io/badge/Development-Active-success)
+
 
 ---
 
