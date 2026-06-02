@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  # Service A: The Asynchronous Web App Server Core
+  web-server:
+    build:
+      context: ../async-http-server
+      dockerfile: Dockerfile
+    ports:
+      - "8085:8085"
+    networks:
+      - backend-mesh
+    depends_on:
+      - cache-engine
+
+  # Service B: The High-Speed Key-Value Data Store
+  cache-engine:
+    image: python:3.11-slim
+    volumes:
+      - ../mini-redis:/app
+    working_dir: /app
+    command: python kv_store.py
+    networks:
+      - backend-mesh
+
+networks:
+  backend-mesh:
+    driver: bridge
