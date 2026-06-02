@@ -1,0 +1,15 @@
+# 🌐 Computer Networking Fundamentals
+
+Notes on how data moves across the internet, mapped directly to my hands-on builds.
+
+## The OSI Model Breakdown
+
+| Layer | Name | Protocol Used in My Server | Responsibility |
+| :--- | :--- | :--- | :--- |
+| **Layer 7** | Application | **HTTP** | Parses the raw text format (`HTTP/1.1 200 OK`) so the browser can render HTML. |
+| **Layer 4** | Transport | **TCP** | Manages the reliable connection stream (`socket.SOCK_STREAM`) and handshakes between ports. |
+| **Layer 3** | Network | **IP** | Routes the packets to the right destination address (`127.0.0.1`). |
+
+## Key Takeaways from Mini-Server Build
+* **Sockets** are an abstraction layer provided by the Operating System that lets our code tap directly into Layer 4 (Transport).
+* Without an application-level standard like **HTTP/1.1**, data sent over a raw TCP socket would just be meaningless binary garbage to a browser.
