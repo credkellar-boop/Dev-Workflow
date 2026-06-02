@@ -1,70 +1,33 @@
-# 🚀 Dev-Workflow
+# 🚀 Systems Engineering & DevOps Laboratory
 
-Welcome to my central engineering hub. This repository tracks my continuous cycle of **learning** foundational concepts, **building** systems from scratch, and **contributing** back to the open-source ecosystem.
-
----
-
-## 🧭 My Flywheel Status
-
-| Pillar | Focus Area | Current Target / Project | Status |
-| :--- | :--- | :--- | :--- |
-| **1. Learn** | System Design & Networking | High-availability architectures | 📖 In Progress |
-| **2. Build** | Systems Programming | Building a Redis-clone from scratch in Go | 🛠️ Coding |
-| **3. Contribute**| Open-Source Ecosystem | Fixing good-first-issues in `Django` | 🚀 2 PRs Merged |
+A structured, hands-on repository capturing deep-dives into core computer science concepts, low-level system designs, and automated infrastructure deployments. Built entirely from scratch using standard runtimes without heavy external abstractions.
 
 ---
 
-## 🧠 1. Learn (Knowledge Base)
-Documenting deep-dives into core computer science concepts. 
-* [Infrastructure: Containerization](./1-Learn/system-design/containerization.md) — Docker vs VMs & Linux Primitives.
-* [Concurrency: Async Event Loops](./1-Learn/languages/async-event-loop.md) — Non-blocking I/O Mechanics.
-* [Data Structures: Hash Tables](./1-Learn/languages/hash-tables.md) — Hashing & Collision Mechanics.
-* [System Design: Rate Limiting](./1-Learn/system-design/rate-limiting.md) — Token Buckets & Traffic Control.
-* [System Design: Caching Strategies](./1-Learn/system-design/caching-strategies.md) — In-Memory Speed & Eviction.
-* [System Design: Load Balancers](./1-Learn/system-design/load-balancers.md) — Horizontal Scaling & Routing.
+<p align="left">
+  <img src="https://img.shields.io/badge/Language-Python%203.11-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.11" />
+  <img src="https://img.shields.io/badge/Architecture-Asynchronous%20%26%20Multi--Threaded-0052CC?style=for-the-badge" alt="Architecture" />
+  <img src="https://img.shields.io/badge/DevOps-Docker%20%26%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Environment-Linux%20Sandbox-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Version%20Control-Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+</p>
 
+---
 
+## 📂 Repository Architecture
 
-
-## 🛠️ 2. Build (From Scratch)
-Production frameworks hide the hard parts. Here, I strip away the magic and build clones of popular tools to understand how they work under the hood.
-* **[Mini HTTP Server](./2-Build/mini-http-server/)**: A raw TCP socket-based server handling HTTP/1.1 requests.
-* **[Custom Key-Value DB](./2-Build/custom-db/)**: A lightweight, disk-backed storage engine.
-
-## 🤝 3. Contribute (Open Source Log)
-Actively giving back to the software that runs the world. 
-
-### 🏆 Merged Pull Requests
-* **[Django PR #12345](https://github.com/django/django/pull/12345)**: Fixed a memory leak in the test runner.
-* **[FastAPI PR #6789](https://github.com/tiangolo/fastapi/pull/6789)**: Improved documentation clarity for WebSocket endpoints.
-
-# Mini HTTP Server from Scratch
-
-A lightweight, raw TCP network socket server built using standard Python to explore low-level network programming.
-
-## 🛠️ How it Works
-* **Transport Layer:** Utilizes raw TCP sockets (`socket.AF_INET`, `socket.SOCK_STREAM`) to handle network data streams.
-* **Application Layer:** Manually parses HTTP/1.1 request strings and serializes raw string responses into encoded binary data byte blocks (`utf-8`).
-
-## 🚀 How to Run
-1. Execute the server script: `python3 server.py`
-2. Open your browser and navigate to `http://127.0.0.1:8080`
-
-
-Dev-Workflow/
-├── README.md                 # The dashboard of your entire developer journey
-├── LICENSE                   # Open-source license (e.g., MIT)
-│
-├── 1-Learn/                  # Phase 1: Conceptual Knowledge
-│   ├── system-design/        # Notes on scaling, databases, caching
-│   ├── languages/            # Deep dives into Python, Go, TypeScript, etc.
-│   └── resources.md          # Links to favorite roadmaps, books, and articles
-│
-├── 2-Build/                  # Phase 2: From Scratch Projects
-│   ├── mini-http-server/     # A web server built using raw sockets
-│   ├── custom-db/            # A simple key-value store 
-│   └── README.md             # Index of your custom builds and their statuses
-│
-└── 3-Contribute/             # Phase 3: Real-World Open Source
-    ├── tracked-issues/       # Notes/clones of issues you are currently solving
-    └── contribution-log.md   # Markdown table tracking your merged Pull Requests
+```text
+.
+├── 1-Learn/                  # Theoretical Deep-Dives & Architectural Blueprints
+│   ├── languages/            # Networking protocols & fundamental data structures
+│   └── system-design/        # High-concurrency systems & DevOps infrastructure
+├── 2-Build/                  # Bare-Metal Implementations & Sandbox Prototypes
+│   ├── async-http-server/    # Single-threaded cooperative multitasking server
+│   ├── mini-hash-table/      # Custom polynomial hashing engine with separate chaining
+│   ├── mini-load-balancer/   # Multi-threaded Layer 4 Round Robin traffic proxy
+│   ├── mini-message-queue/   # Decoupled FIFO message broker & worker pool
+│   ├── mini-rate-limiter/    # Timestamp-driven dynamic Token Bucket security guard
+│   ├── mini-redis/           # Thread-safe Key-Value storage with manual TTL eviction
+│   └── orchestration-cluster/# Multi-container bridging network configuration
+└── 3-Contribute/             # Open-Source History & Production Code Tracking
+    └── contribution-log.md   # Chronological ledger of real-world ecosystem impact
