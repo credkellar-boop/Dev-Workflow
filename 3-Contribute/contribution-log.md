@@ -1,18 +1,13 @@
-# Open Source Contribution Log
+# 🎯 Open Source Contribution Strategy
 
-This document tracks my journey contributing to the open-source ecosystem.
+My roadmap for transitioning from local lab builds to upstream production patches.
 
-## 🎯 Active Targets (Scouting & Working)
+## Target Ecosystems
+1. **`python/cpython`**: Analyzing core `asyncio` loop performance.
+2. **`encode/httpx`**: Investigating connection pooling logic in high-concurrency scenarios.
+3. **`docker/compose`**: Auditing network configuration parsing logic.
 
-| Repository | Issue | Status | Notes |
-| :--- | :--- | :--- | :--- |
-| `python/cpython` | [Internal Asyncio Optimization] | 🔍 Scouting | *Analyzing internal event loop handling or socket performance wrappers.* |
-| `encode/httpx` | [Network Transport Layer Triage] | 🔍 Scouting | *Investigating connection pooling or asynchronous HTTP network client layers.* |
-
----
-
-## 🏆 Merged Pull Requests
-
-| Repository | Pull Request | Date Merged | Impact |
-| :--- | :--- | :--- | :--- |
-| `firstcontributions/first-contributions` | [#118125 - Update Contributors.md](https://github.com/firstcontributions/first-contributions/pull/118125) | 2026-06-01 | Successfully verified Git fork and pull request synchronization mechanics. |
+## Scouting Status
+* [ ] **Task 1:** Identify an 'up-for-grabs' issue in a networking library using my custom gateway/proxy knowledge.
+* [ ] **Task 2:** Create a reproduction script (using my own `benchmark_runner` template).
+* [ ] **Task 3:** Submit a Pull Request (PR) with tests.
