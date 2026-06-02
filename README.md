@@ -6,7 +6,6 @@ An elite, bare-metal infrastructure laboratory demonstrating deep-level mastery 
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ![Architecture: Microservices](https://img.shields.io/badge/Architecture-Microservices-red)
 ![Containerization: Docker](https://img.shields.io/badge/Containerization-Docker-blue)
 ![Development: Active](https://img.shields.io/badge/Development-Active-success)
