@@ -15,9 +15,10 @@ Welcome to my central engineering hub. This repository tracks my continuous cycl
 ---
 
 ## 🧠 1. Learn (Knowledge Base)
-This section documents my deep-dives into core computer science concepts. I believe the best way to learn is to explain it simply to others.
-* [System Design Notes](./1-Learn/system-design/) - Sharding, Load Balancers, and CAP Theorem.
-* [My Learning Resources](./1-Learn/resources.md) - Curated roadmaps and books I am following.
+Documenting deep-dives into core computer science concepts. 
+* [Network Protocol Basics](./1-Learn/languages/networking-basics.md) — OSI Model & Socket Theory.
+* [My Learning Resources](./1-Learn/resources.md) — Curated roadmaps.
+
 
 ## 🛠️ 2. Build (From Scratch)
 Production frameworks hide the hard parts. Here, I strip away the magic and build clones of popular tools to understand how they work under the hood.
