@@ -1,0 +1,12 @@
+# Custom API Gateway & Reverse Proxy Ingress
+
+A bare-metal edge-routing engine built using standard Python routines to demonstrate traffic filtering and path-based request forwarding.
+
+## 🛠️ Architectural Features
+* **Reverse Proxy Mechanics:** Disguises downstream service ports, creating a unified application entry mask for connecting clients.
+* **Edge Authentication Hook:** Rejects requests missing valid authorization metrics before they can penetrate deeper microservice infrastructure components.
+* **Dynamic Prefix Matching:** Evaluates runtime URI route strings to seamlessly forward requests across internal networks.
+
+## 🚀 Execution
+```bash
+python3 api_gateway.py
