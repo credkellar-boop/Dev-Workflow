@@ -31,6 +31,19 @@ Actively giving back to the software that runs the world.
 * **[Django PR #12345](https://github.com/django/django/pull/12345)**: Fixed a memory leak in the test runner.
 * **[FastAPI PR #6789](https://github.com/tiangolo/fastapi/pull/6789)**: Improved documentation clarity for WebSocket endpoints.
 
+# Mini HTTP Server from Scratch
+
+A lightweight, raw TCP network socket server built using standard Python to explore low-level network programming.
+
+## 🛠️ How it Works
+* **Transport Layer:** Utilizes raw TCP sockets (`socket.AF_INET`, `socket.SOCK_STREAM`) to handle network data streams.
+* **Application Layer:** Manually parses HTTP/1.1 request strings and serializes raw string responses into encoded binary data byte blocks (`utf-8`).
+
+## 🚀 How to Run
+1. Execute the server script: `python3 server.py`
+2. Open your browser and navigate to `http://127.0.0.1:8080`
+
+
 Dev-Workflow/
 ├── README.md                 # The dashboard of your entire developer journey
 ├── LICENSE                   # Open-source license (e.g., MIT)
