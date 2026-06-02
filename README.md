@@ -1,9 +1,4 @@
 # 🚀 Systems Engineering & DevOps Laboratory
-
-A structured, hands-on repository capturing deep-dives into core computer science concepts, low-level system designs, and automated infrastructure deployments. Built entirely from scratch using standard runtimes without heavy external abstractions.
-
----
-
 <p align="left">
   <img src="https://img.shields.io/badge/Language-Python%203.11-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.11" />
   <img src="https://img.shields.io/badge/Architecture-Asynchronous%20%26%20Multi--Threaded-0052CC?style=for-the-badge" alt="Architecture" />
@@ -11,6 +6,8 @@ A structured, hands-on repository capturing deep-dives into core computer scienc
   <img src="https://img.shields.io/badge/Environment-Linux%20Sandbox-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
   <img src="https://img.shields.io/badge/Version%20Control-Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 </p>
+
+A structured, hands-on repository capturing deep-dives into core computer science concepts, low-level system designs, and automated infrastructure deployments. Built entirely from scratch using standard runtimes without heavy external abstractions.
 
 ---
 
