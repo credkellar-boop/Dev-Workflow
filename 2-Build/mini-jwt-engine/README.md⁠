@@ -1,0 +1,12 @@
+# Custom Cryptographic JWT Engine from Scratch
+
+A clean-room implementation of stateless JSON Web Token generation and validation mechanics using standard Python libraries.
+
+## 🛠️ Security Engineering Specs
+* **HMAC-SHA256 Signatures:** Binds data components to a server-side secret key, ensuring complete data immutability.
+* **Constant-Time Verification:** Employs `hmac.compare_digest` to analyze signatures, eliminating string comparison timing attacks.
+* **Base64URL Format Compliance:** Encodes header and payload sets to URL-safe string standards, removing trailing padding anomalies.
+
+## 🚀 Execution
+```bash
+python3 jwt_engine.py
